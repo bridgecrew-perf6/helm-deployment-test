@@ -15,6 +15,7 @@ jobs:
       with:
         token: '${{ github.token }}'
         secrets: '${{ toJSON(secrets) }}'
+        helm: helm3
         version: '${{ github.sha }}'
         chart: 'app'
       env:
